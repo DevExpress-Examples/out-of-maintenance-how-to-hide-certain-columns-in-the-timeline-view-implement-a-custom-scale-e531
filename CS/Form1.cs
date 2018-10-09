@@ -1,6 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraScheduler;
 using System.Windows.Forms;
-using DevExpress.XtraScheduler;
 
 namespace TimelineTimeScales {
     public partial class Form1 : Form {

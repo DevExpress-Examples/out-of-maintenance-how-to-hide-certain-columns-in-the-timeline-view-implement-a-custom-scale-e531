@@ -32,9 +32,9 @@
             DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
             DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
             this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
-            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
+            this.schedulerDataStorage1 = new DevExpress.XtraScheduler.SchedulerDataStorage(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).BeginInit();
             this.SuspendLayout();
             // 
             // schedulerControl1
@@ -45,7 +45,7 @@
             this.schedulerControl1.Name = "schedulerControl1";
             this.schedulerControl1.Size = new System.Drawing.Size(566, 331);
             this.schedulerControl1.Start = new System.DateTime(2012, 9, 13, 0, 0, 0, 0);
-            this.schedulerControl1.Storage = this.schedulerStorage1;
+            this.schedulerControl1.DataStorage = this.schedulerDataStorage1;
             this.schedulerControl1.TabIndex = 0;
             this.schedulerControl1.Text = "schedulerControl1";
             timeRuler1.TimeZoneId = "Russian Standard Time";
@@ -59,12 +59,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 331);
+            this.ClientSize = new System.Drawing.Size(666, 333);
             this.Controls.Add(this.schedulerControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+
+            this.Text = "How to hide certain columns in the Timeline view (implement a custom scale)";
             ((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -72,7 +74,7 @@
         #endregion
 
         private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
-        private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
+        private DevExpress.XtraScheduler.SchedulerDataStorage schedulerDataStorage1;
     }
 }
 
