@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomTimeScale.cs](./CS/CustomTimeScale.cs) (VB: [CustomTimeScale.vb](./VB/CustomTimeScale.vb))
+* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
+<!-- default file list end -->
 # How to hide certain columns in the Timeline view (implement a custom scale)
 
 
